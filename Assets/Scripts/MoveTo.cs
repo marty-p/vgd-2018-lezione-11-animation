@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
-public class MoveTo : MonoBehavior {
+public class MoveTo : MonoBehaviour {
     public Transform goal;
     private NavMeshAgent agent;
     private void Start()
