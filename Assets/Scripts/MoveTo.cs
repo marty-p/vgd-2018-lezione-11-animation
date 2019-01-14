@@ -20,7 +20,7 @@ public class MoveTo : MonoBehaviour {
             anim.SetBool("isMoving", true);
         else
             anim.SetBool("isMoving", false);
-        // set velocity
+        // set velocity (navmesh doesn't walk backwards, so we consider only positive values
         anim.SetFloat("Velocity", agent.velocity.magnitude / agent.speed);
     }
 }
