@@ -12,5 +12,9 @@ public class MoveTo : MonoBehaviour {
     private void Update()
     {
         agent.destination = goal.position;
+        if (agent.velocity.magnitude > 0)
+            anim.SetBool("isMoving", true);
+        else
+            anim.SetBool("isMoving", false);
     }
 }
